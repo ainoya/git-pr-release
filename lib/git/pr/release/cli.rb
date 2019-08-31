@@ -42,7 +42,7 @@ module Git
 
           client = Octokit::Client.new :access_token => obtain_token!
 
-          git :remote, 'update', 'origin' if !@no_fetch
+#          git :remote, 'update', 'origin' if !@no_fetch
 
           ### Fetch merged PRs
 
