@@ -74,7 +74,7 @@ module Git
 
           if merged_pull_request_numbers.empty?
             say 'No pull requests to be released', :error
-            exit 1
+            exit 0
           end
 
           merged_prs = merged_pull_request_numbers.map do |nr|
